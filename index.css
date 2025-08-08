@@ -1,0 +1,84 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+}
+
+.weatherBody {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.weatherBox1 {
+  height: 500px;
+  width: 500px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+button {
+  height: 24px;
+  border: 0px;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-right: 1px solid;
+  cursor: pointer;
+}
+
+.theLocation {
+}
+
+#location {
+  font-size: 20px;
+  text-align: center;
+}
+
+.theDegree {
+  background-color: lightblue;
+}
+
+#degree {
+  font-size: 80px;
+
+  text-align: center;
+}
+
+.theDescription {
+  display: flex;
+  flex-direction: column;
+}
+
+#brief,
+#wind,
+#humidity {
+  text-align: center;
+  font-size: 24px;
+}
+
+#wind,
+#humidity {
+  text-align: left;
+}
