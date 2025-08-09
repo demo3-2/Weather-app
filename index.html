@@ -5,55 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather</title>
-    <link rel="stylesheet" href="/index.css">
+    <link rel="icon" href="./images/sunny.png">
+    <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
 
-
-    <h2>THE WEATHER APP</h2>
-
     <div class="weatherBody">
+        <form action="">
+            <input type="search" name="search" id="search" placeholder="Search for a city..." required>
+            <button type="submit" aria-label="Search for weather">
+                <img src="search.png" alt="search">
+            </button>
+        </form>
 
-        <div class="weatherBox1">
-
-            <form action="">
-                <input type="search" name="search" id="search">
-                <button type="submit">Get Weather</button>
-            </form>
-
-            <div class="theLocation">
-                <p id="location">The Location e.g. Vanderbijlpark</p>
-            </div>
-
-
-            <div class="theDegree">
-                <p id="degree">9<sup>o</sup></p>
-
-            </div>
-
-
-
-            <div class="theDescription">
-                <p id="brief">The brief e.g. sunny</p>
-                <p id="wind">Wind speed e.g. 15km/hr</p>
-                <p id="humidity">The humidity e.g 60%</p>
-            </div>
-
-
+        <div class="unit-toggle">
+            <label>
+                <input type="radio" name="unit" value="metric" checked> °C
+            </label>
+            <label>
+                <input type="radio" name="unit" value="imperial"> °F
+            </label>
         </div>
 
+        <div class="theLocation">
+            <p id="location">Durban</p>
+        </div>
 
+        <div class="theDegree">
+            <p id="degree">9<sup>o</sup>C</p>
+        </div>
 
+        <div class="weather">
+            <img id="weather-icon" src="" alt="Weather-icon" />
+            <p id="weather">Sunny</p>
+        </div>
+
+        <div class="theDescription">
+            <p id="wind">Wind: 15km/hr</p>
+            <p id="humidity">Humidity: 60%</p>
+        </div>
     </div>
 
+    <div class="Weather-Forecast">
+        <h2>Weather Forecast</h2>
+        <div class="forecast">
+            <!-- Forecast items added here -->
+        </div>
+    </div>
 
-
-
-
-
-
-    <script src="/index.js"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>
+<!--886356-->
